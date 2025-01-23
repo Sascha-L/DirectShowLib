@@ -2,4 +2,4 @@
 
 # DirectShowLib
 .NET Interfaces for calling DirectShow.  
-This is port or fork of [DirectShowLib](http://directshownet.sourceforge.net) for .NET 4.5 and .NET Standard 2.0.
+This is a fork of [DirectShowLib](http://directshownet.sourceforge.net) for .NET 8 & .NET 9

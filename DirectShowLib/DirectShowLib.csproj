@@ -1,30 +1,28 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyTitle>DirectShow Net Library</AssemblyTitle>
-    <AssemblyVersion>2.1.0</AssemblyVersion>
-    <Authors>Luthfi Tri Atmaja</Authors>
-    <Company>DirectShowLib</Company>
+    <AssemblyVersion>3.0.0</AssemblyVersion>
+    <Authors>WPF MediaKit Team</Authors>
+    <Company>WPF MediaKit Team</Company>
     <Copyright>GNU Lesser General Public License v2.1</Copyright>
-    <Description>.NET Interfaces for calling DirectShow. This is port/fork of DirectShowLib (http://directshownet.sourceforge.net) for .NET 4.5 and .NET Standard 2.0.</Description>
+    <Description>.NET Interfaces for calling DirectShow. This is a fork of DirectShowLib (http://directshownet.sourceforge.net) for .NET 8 and .NET 9</Description>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageId>DirectShowLib.Standard</PackageId>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-    <PackageProjectUrl>https://github.com/luthfiampas/DirectShowLib</PackageProjectUrl>
-    <PackageReleaseNotes>IEnumXXX interfaces use IntPtr rather than out int</PackageReleaseNotes>
+    <PackageId>DirectShowLib.Net</PackageId>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/Sascha-L/DirectShowLib</PackageProjectUrl>
+    <PackageReleaseNotes>Upgraded to .NET 8 / 9</PackageReleaseNotes>
     <PackageTags>directshow</PackageTags>
-    <RepositoryUrl>https://github.com/luthfiampas/DirectShowLib</RepositoryUrl>
-    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
-    <Version>2.1.0</Version>
+    <RepositoryUrl>https://github.com/Sascha-L/DirectShowLib</RepositoryUrl>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <Version>3.0.0</Version>
+    <Title>DirectShowLib</Title>
   </PropertyGroup>
-
   <ItemGroup>
     <!--see: https://github.com/NuGet/docs.microsoft.com-nuget/issues/1228#issuecomment-448718311-->
-    <None Include="..\LICENSE" Pack="true" Visible="false" PackagePath="" />
+    <None Include="..\LICENSE.txt" Pack="true" Visible="false" PackagePath="" />
     <Compile Remove="nupkg\**" />
     <EmbeddedResource Remove="nupkg\**" />
     <None Remove="nupkg\**" />
   </ItemGroup>
-
 </Project>
